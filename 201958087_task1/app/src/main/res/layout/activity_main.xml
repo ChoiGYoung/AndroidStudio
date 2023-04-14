@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름:최가영"
+        android:textSize="14dp"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="201958087"
+        android:textSize="14dp"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학년?"
+        android:textSize="15dp"
+        android:padding="10dp"
+        ></TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1학년"
+            android:enabled="false"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2학년"
+            android:enabled="false"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3학년"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4학년"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/mini"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/mini"
+            android:visibility="visible"
+            android:layout_gravity="center"
+        ></ImageView>
+        <ImageView
+            android:id="@+id/mini2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/mini2"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/mini3"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/mini3"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            ></ImageView>
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:id="@+id/next"
+        android:onClick="ButtonClick"
+
+        ></Button>
+
+
+
+
+
+
+</LinearLayout>
